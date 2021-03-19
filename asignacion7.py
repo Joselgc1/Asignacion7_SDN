@@ -1,4 +1,4 @@
-import request
+import requests
 from pprint import pprint
 import json
 from tabulate import tabulate
