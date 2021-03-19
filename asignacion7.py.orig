@@ -1,15 +1,20 @@
-import request
+import requests
 from pprint import pprint
 import json
 from tabulate import tabulate
 
 response = requests.post(
     'https://sandboxdnac.cisco.com/dna/system/api/v1/auth/token',
-    headers = {'Authorization':'Basic ZGV2bmV0dXNlcjpDaXNjbzEyMyE='})
-payload = response.json()
+<<<<<<< HEAD
+    headers={'Authorization':'Basic ZGV2bmV0dXNlcjpDaXNjbzEyMyE='})
+payload=response.json()
 pprint(payload)
 
 response.raise_for_status()
+=======
+    headers = {'Authorization':'Basic ZGV2bmV0dXNlcjpDaXNjbzEyMyE='})
+payload = response.json()
+pprint(payload)
 
 value = payload.get('Token')
 
@@ -39,3 +44,4 @@ print('')
 print(tabulate(Equipos, headers = 
 	['Tipo de Equipo','Nombre del Host','IP del Administrador',
 	'Ultima Actualizacion','Estatus del Equipo']))
+>>>>>>> Parte1
