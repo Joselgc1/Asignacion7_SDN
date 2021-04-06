@@ -1,0 +1,9 @@
+version: "3.9"
+services:
+  frontend:
+    image: getting-started
+    volumes:
+      - new_vol:/home/node/app
+volumes:
+  new_vol:
+    external: true
